@@ -18,7 +18,7 @@ const FormIncription = () =>{
 
         if(values.every(v => v !== "")){
 
-            axios.post("http://localhost:3001/api/inscription", dataForm); 
+            axios.post("formdata-production.up.railway.app/api/inscription", dataForm); 
             // JSON.stringify(dataForm)
            document.getElementById("myForm").reset();
            alert("¡Enviado!");
