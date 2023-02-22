@@ -42,6 +42,7 @@ const uploadData = (req, res) =>{
         if(error){
             res.sendStatus(403);
         }else{
+           //console.log(req.body);
             modelForm.create(req.body).then(()=>{
                 res.json({
                     data: "data save..."
