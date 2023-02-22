@@ -11,6 +11,6 @@ server.use(morgan("tiny")); // historial de peticiones
 server.use(express.json()); //manejo de info en json
 // server.use(require("./hook/contentRangeHook")); 
     //
-server.use("/api/inscription",sendEmail,require("./routers/DataForm")); //uso de rutas 
+server.use("/api/inscription",require("./routers/DataForm")); //uso de rutas 
     //server.use("/api/inscription", sendEmail);
 module.exports = server; 
