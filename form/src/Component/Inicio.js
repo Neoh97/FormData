@@ -12,7 +12,7 @@ const Inicio = () => (
         </div>
         <div className="grawper">
             <Link to="/document">
-                <button class="button green">Empezar</button>
+                <button className="button green">Empezar</button>
             </Link>
         </div>
     </div>

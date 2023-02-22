@@ -121,7 +121,7 @@ const FormIncription = () =>{
                     <div className="control">
                         <label className="label">Sexo:<span className="required">*</span></label>
                         <label className="radio">
-                            <input type="radio" name="sexo" value="F" checked/>
+                            <input type="radio" name="sexo" value="F" defaultChecked/>
                             Femenino
                         </label>
                         <label className="radio">
