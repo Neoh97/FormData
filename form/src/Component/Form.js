@@ -17,10 +17,9 @@ const FormIncription = () =>{
         const values = Object.values(dataForm); 
 
         if(values.every(v => v !== "")){
-            const data = JSON.stringify(dataForm)
-            axios.post("formdata-production.up.railway.app/api/inscription", data); 
-            // JSON.stringify(dataForm)
-           document.getElementById("myForm").reset();
+        
+            axios.post("formdata-production.up.railway.app/api/inscription", dataForm); 
+           //document.getElementById("myForm").reset();
            alert("¡Enviado!");
           
         }
