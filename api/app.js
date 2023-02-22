@@ -9,6 +9,8 @@ const server = express();
 server.use(cors()); // manejo de error de origen crusado 
 server.use(morgan("tiny")); // historial de peticiones 
 server.use(express.json()); //manejo de info en json
+const cookieParser = require("cookie-parser");
+const bodyParser = require("body-parser");
 // server.use(require("./hook/contentRangeHook")); 
 
 
